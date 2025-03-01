@@ -14,5 +14,10 @@ public class HelloController {
     public String greetUser(@RequestParam(value = "name") String name) {
         return "Hello " + name + " from BridgeLabz";
     }
+    @GetMapping("/hello/param/{name}")
+    public String sayHello(@PathVariable String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
+
 
 }
